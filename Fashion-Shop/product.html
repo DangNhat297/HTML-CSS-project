@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .slick-slide {
+            margin: 0 10px;
+        }
+        /* the parent */
+        .slick-list {
+            margin: 0 -10px;
+        }
+    </style>
+</head>
+<body id="style-5" class="product-page">
+    <header>
+        <div class="form-search">
+            <div class="container-custom">
+                <form class="search">
+                    <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button><i class="fas fa-search"></i> Tìm kiếm</button>
+                    <span class="close-form"><i class="fas fa-times"></i> Đóng</span>
+                </form>
+            </div>
+        </div>
+        <div class="container-custom header">
+            <img class="logo" src="img/logo.png">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="dropdown"><a href="listproduct.html">Sản Phẩm</a>
+                        <ul class="dropdown-list">
+                            <li><a href="listproduct.html">Áo thun</a></li>
+                            <li><a href="listproduct.html">Áo nam</a></li>
+                            <li><a href="listproduct.html">Áo nữ</a></li>
+                            <li><a href="listproduct.html">Áo khoác</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <ul class="header-action">
+                <li class="icon-search"><i class="fas fa-search"></i></li>
+                <li class="dropdown"><i class="far fa-user"></i>
+                    <ul class="dropdown-list">
+                        <li><a href="login.html">Đăng nhập</a></li>
+                        <li><a href="register.html">Đăng kí</a></li>
+                    </ul>
+                </li>
+                <li class="cart"><i class="fas fa-shopping-cart"></i>
+                    <div class="cart-list">
+                        <div class="cart-list__body" id="style-5">
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                        </div>
+                        <div class="cart-list__footer">
+                            <div class="cart-list__total-price">
+                                <span>Tổng tiền: </span>
+                                <span>1.000.000đ</span>
+                            </div>
+                            <div class="cart-list__button">
+                                <a href="cart.html"><button class="cart-list__btn">xem giỏ hàng</button></a>
+                                <button class="cart-list__btn">thanh toán</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="product-single container-custom">
+            <div class="breadcrumb-detail">
+                <ul class="bread-crumb">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li>Otis T-shirt</li>
+                </ul>
+            </div>
+            <div class="product-detail">
+                <div class="product-detail__image">
+                    <div class="product-detail__image--thumbnail">
+                        <img src="img/3.1.jpg">
+                    </div>
+                    <div class="product-detail__image--album slider-nav">
+                        <div class="product-album__item">
+                            <img src="img/1.1.jpg">
+                        </div>
+                        <div class="product-album__item">
+                            <img src="img/2.1.jpg">
+                        </div>
+                        <div class="product-album__item">
+                            <img src="img/3.1.jpg">
+                        </div>
+                        <div class="product-album__item">
+                            <img src="img/5.1.jpg">
+                        </div>
+                        <div class="product-album__item">
+                            <img src="img/2.1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-detail__info">
+                    <div class="product-info__name">
+                        Otis T-shirt
+                    </div>
+                    <div class="product-info__price">
+                        450.000đ <del>500.000đ</del>
+                    </div>
+                    <hr>
+                    <div class="product-info__short--description">
+                        ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                    </div>
+                    <div class="product-info__quantity">Số lượng:
+                        <div class="product-info__quantify--btn">
+                            <button type="button" class="btn-quantity sub">-</button>
+                            <input type="number" name="quantity" step="1" value="1" class="btn-quantity" min="1">
+                            <input type="hidden" name="id" value="1">
+                            <button type="button" class="btn-quantity add">+</button>
+                        </div>
+                    </div>
+                    <div class="product-info__btn">
+                        <button class="add-cart"><i class="fas fa-cart-plus"></i> Thêm Vào Giỏ</button>
+                        <button class="buynow"><i class="fas fa-shopping-bag"></i> Mua Ngay</button>
+                    </div>
+                    <div class="product-info__share">
+                        Chia sẻ: 
+                        <ul class="social_share">
+                            <li class="facebook" alt="Chia sẻ facebook"><a href="#" alt="Chia sẻ facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="twitter"><a href="#" alt="Chia sẻ twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li class="pinterest"><a href="#" alt="Chia sẻ pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li class="messenger"><a href="#" alt="Copy link"><i class="fas fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="product-about">
+                <div class="product-tab">
+                    <span data-tab="description" class="active">Mô tả sản phẩm</span>
+                    <span data-tab="comment" >Bình luận</span>
+                    <div class="tabline"></div>
+                </div>
+                <div class="tab-content product-description" id="description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+                <div class="tab-content product-comment" id="comment">
+                    <div class="product-comment__list" id="style-5">
+                        <div class="product-comment__item">
+                            <div class="product-comment__item--name">
+                                <span>Nguyễn Đăng Nhật</span>
+                                <span>21-09-2021 lúc 22:55:01</span>
+                            </div>
+                            <div class="product-comment__item--content">
+                                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                            </div>
+                        </div>
+                        <div class="product-comment__item">
+                            <div class="product-comment__item--name">
+                                <span>Nguyễn Đăng Nhật</span>
+                                <span>21-09-2021 lúc 22:55:01</span>
+                            </div>
+                            <div class="product-comment__item--content">
+                                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                            </div>
+                        </div>
+                        <div class="product-comment__item">
+                            <div class="product-comment__item--name">
+                                <span>Nguyễn Đăng Nhật</span>
+                                <span>21-09-2021 lúc 22:55:01</span>
+                            </div>
+                            <div class="product-comment__item--content">
+                                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                            </div>
+                        </div>
+                        <div class="product-comment__item">
+                            <div class="product-comment__item--name">
+                                <span>Nguyễn Đăng Nhật</span>
+                                <span>21-09-2021 lúc 22:55:01</span>
+                            </div>
+                            <div class="product-comment__item--content">
+                                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                            </div>
+                        </div>
+                        <div class="product-comment__item">
+                            <div class="product-comment__item--name">
+                                <span>Nguyễn Đăng Nhật</span>
+                                <span>21-09-2021 lúc 22:55:01</span>
+                            </div>
+                            <div class="product-comment__item--content">
+                                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                            </div>
+                        </div>
+                        <div class="product-comment__item">
+                            <div class="product-comment__item--name">
+                                <span>Nguyễn Đăng Nhật</span>
+                                <span>21-09-2021 lúc 22:55:01</span>
+                            </div>
+                            <div class="product-comment__item--content">
+                                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                            </div>
+                        </div>
+                        <div class="product-comment__item">
+                            <div class="product-comment__item--name">
+                                <span>Nguyễn Đăng Nhật</span>
+                                <span>21-09-2021 lúc 22:55:01</span>
+                            </div>
+                            <div class="product-comment__item--content">
+                                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                            </div>
+                        </div>
+                        <div class="product-comment__item">
+                            <div class="product-comment__item--name">
+                                <span>Nguyễn Đăng Nhật</span>
+                                <span>21-09-2021 lúc 22:55:01</span>
+                            </div>
+                            <div class="product-comment__item--content">
+                                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                            </div>
+                        </div>
+                        <div class="product-comment__item">
+                            <div class="product-comment__item--name">
+                                <span>Nguyễn Đăng Nhật</span>
+                                <span>21-09-2021 lúc 22:55:01</span>
+                            </div>
+                            <div class="product-comment__item--content">
+                                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                            </div>
+                        </div>
+                    </div>
+                    <form class="comment">
+                        <textarea rows="3" class="input-comment" placeholder="Nhập nội dung bình luận" required></textarea>
+                        <button class="comment-btn"><i class="fas fa-reply"></i> Gửi bình luận</button>
+                    </form>
+                    <div class="box-alert">Vui lòng đăng nhập để bình luận !</div>
+                </div>
+            </div>
+            <p class="title"><span>Sản Phẩm Liên Quan</span></p>
+            <div class="list-product" style="overflow: hidden;">
+                <a href="#">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="img/1.1.jpg">
+                            <div class="product-button">
+                                <button><i class="fas fa-cart-plus"></i> thêm vào giỏ</button>
+                                <button><i class="fas fa-shopping-basket"></i> mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="product-name">
+                            Otis T-shirtgggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                        </div>
+                        <div class="product-price">
+                            150.000đ
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="img/1.1.jpg">
+                            <div class="product-button">
+                                <button><i class="fas fa-cart-plus"></i> thêm vào giỏ</button>
+                                <button><i class="fas fa-shopping-basket"></i> mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="product-name">
+                            Otis T-shirtgggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                        </div>
+                        <div class="product-price">
+                            150.000đ
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="img/1.1.jpg">
+                            <div class="product-button">
+                                <button><i class="fas fa-cart-plus"></i> thêm vào giỏ</button>
+                                <button><i class="fas fa-shopping-basket"></i> mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="product-name">
+                            Otis T-shirtgggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                        </div>
+                        <div class="product-price">
+                            150.000đ
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="product">
+                        <div class="product-image">
+                            <img src="img/1.1.jpg">
+                            <div class="product-button">
+                                <button><i class="fas fa-cart-plus"></i> thêm vào giỏ</button>
+                                <button><i class="fas fa-shopping-basket"></i> mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="product-name">
+                            Otis T-shirtgggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                        </div>
+                        <div class="product-price">
+                            150.000đ
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-custom footer">
+            <div class="column">
+                <img src="img/logo.png" class="f-logo">
+                <ul class="f-infomation">
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Địa chỉ: XXX - XXXX - XXXXXXX</span></li>
+                    <li><i class="fas fa-phone-alt"></i> <span>Số điện thoại: 0987.654.321</span></li>
+                    <li><i class="far fa-envelope-open"></i> <span>Email: admin@fashion.vn</span></li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="column-title">Địa Chỉ Cửa Hàng</div>
+                <ul class="f-link">
+                    <li><a href="#">Hướng Dẫn Thanh Toán</a></li>
+                    <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="#">Hướng Dẫn Chọn Site</a></li>
+                    <li><a href="#">Hướng Dẫn Đổi Trả</a></li>
+                    <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="column-title">Địa Chỉ Cửa Hàng</div>
+                <ul class="f-link">
+                    <li><a href="#">Hướng Dẫn Thanh Toán</a></li>
+                    <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="#">Hướng Dẫn Chọn Site</a></li>
+                    <li><a href="#">Hướng Dẫn Đổi Trả</a></li>
+                    <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="column-title">Địa Chỉ Cửa Hàng</div>
+                <form class="f-subscribe">
+                    <input type="text" placeholder="Nhập email của bạn...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </form>
+                <ul class="social-share">
+                    <li class="social-item social-item--facebook">
+                      <i class="fab fa-facebook-square"></i>
+                    </li>
+                    <li class="social-item social-item--twitter">
+                      <i class="fab fa-twitter"></i>
+                    </li>
+                    <li class="social-item social-item--telegram">
+                      <i class="fab fa-telegram"></i>
+                    </li>
+                    <li class="social-item social-item--linkedin">
+                      <i class="fab fa-linkedin"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $(".product-comment__list").scrollTop($(this).height());
+        function activeTab(tab){
+            $('.product-tab span').removeClass("active");
+            $(tab).addClass("active");
+            var id = $(tab).data("tab");
+            $('.tab-content').hide();
+            $('#' + id).show();
+            const tabActive = $('.product-tab span.active');
+            const line = $('.product-tab .tabline');
+            line.css("left", $(tabActive).position().left + 'px');
+            line.css("width", $(tabActive).outerWidth() + 'px');
+        }
+        $('.product-tab span').click(function(){
+            activeTab(this);
+            return false;
+        });
+        activeTab('.product-tab span:first-child');
+        $('.list-product').slick({
+            slidesToShow: 4,
+            slideToScroll: 1,
+            dots: true
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            dots: true,
+            focusOnSelect: true
+        });
+        var img = $('.slick-current').find('img').attr('src');
+        $('.product-detail__image--thumbnail').find('img').attr('src', img);
+        $('.product-detail__image--album').click(function(){
+            $('.product-album__item').each(function(index,value){
+                if($(value).hasClass('slick-current')){
+                    var img = $(value).find('img').attr('src');
+                    $('.product-detail__image--thumbnail').find('img').attr('src', img);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

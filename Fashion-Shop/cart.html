@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="style-5">
+    <header>
+        <div class="form-search">
+            <div class="container-custom">
+                <form class="search">
+                    <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                    <button><i class="fas fa-search"></i> Tìm kiếm</button>
+                    <span class="close-form"><i class="fas fa-times"></i> Đóng</span>
+                </form>
+            </div>
+        </div>
+        <div class="container-custom header">
+            <img class="logo" src="img/logo.png">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="dropdown"><a href="listproduct.html">Sản Phẩm</a>
+                        <ul class="dropdown-list">
+                            <li><a href="listproduct.html">Áo thun</a></li>
+                            <li><a href="listproduct.html">Áo nam</a></li>
+                            <li><a href="listproduct.html">Áo nữ</a></li>
+                            <li><a href="listproduct.html">Áo khoác</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <ul class="header-action">
+                <li class="icon-search"><i class="fas fa-search"></i></li>
+                <li class="dropdown"><i class="far fa-user"></i>
+                    <ul class="dropdown-list">
+                        <li><a href="login.html">Đăng nhập</a></li>
+                        <li><a href="register.html">Đăng kí</a></li>
+                    </ul>
+                </li>
+                <li class="cart"><i class="fas fa-shopping-cart"></i>
+                    <div class="cart-list">
+                        <div class="cart-list__body" id="style-5">
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                            <div class="cart-list__item">
+                                <div class="cart-item__image">
+                                    <img src="img/sho-ban-ao-thun-form-rong-1.png">
+                                </div>
+                                <div class="cart-item__detail">
+                                    <div class="cart-item__name">Áo thun cực xịn ngây ngất lòng người</div>
+                                    <div class="cart-item__quantity">
+                                        X <span>4</span>
+                                    </div>
+                                    <div class="cart-item__price">400.000đ</div>
+                                </div>
+                                <div class="cart-item__remove"><i class="fas fa-trash-alt"></i></div>
+                            </div>
+                        </div>
+                        <div class="cart-list__footer">
+                            <div class="cart-list__total-price">
+                                <span>Tổng tiền: </span>
+                                <span>1.000.000đ</span>
+                            </div>
+                            <div class="cart-list__button">
+                                <a href="cart.html"><button class="cart-list__btn">xem giỏ hàng</button></a>
+                                <button class="cart-list__btn">thanh toán</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="breadcrumb-thumb">
+            <p class="namepage">giỏ hàng</p>
+            <div><a href="index.html">Trang Chủ</a> / Giỏ Hàng</div>
+        </div>
+        <div class="cart-page container-custom">
+            <div class="table-cart__header">
+                <div>Ảnh sản phẩm</div>
+                <div>Tên sản phẩm</div>
+                <div>Giá</div>
+                <div>Số lượng</div>
+                <div>Thành tiền</div>
+                <div>Xóa</div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item__image">
+                    <img src="img/5.1.jpg">
+                </div>
+                <div class="cart-item__name">Otis T-shirt</div>
+                <div class="cart-item__price">150.000đ</div>
+                <div class="cart-item__quantity">
+                    <div class="cart-quantity__btn">
+                        <button class="cart-quantity__button sub">-</button>
+                        <input type="number" name="quantity" step="1" value="1" class="btn-quantity" min="1">
+                        <button class="cart-quantity__button add">+</button>
+                    </div>
+                </div>
+                <div class="cart-item__total">150.000đ</div>
+                <div class="cart-item__action">
+                    <button class="remove-cart__btn"><i class="far fa-trash-alt"></i> Xóa</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item__image">
+                    <img src="img/5.1.jpg">
+                </div>
+                <div class="cart-item__name">Otis T-shirt</div>
+                <div class="cart-item__price">150.000đ</div>
+                <div class="cart-item__quantity">
+                    <div class="cart-quantity__btn">
+                        <button class="cart-quantity__button sub">-</button>
+                        <input type="number" name="quantity" step="1" value="1" class="btn-quantity" min="1">
+                        <button class="cart-quantity__button add">+</button>
+                    </div>
+                </div>
+                <div class="cart-item__total">150.000đ</div>
+                <div class="cart-item__action">
+                    <button class="remove-cart__btn"><i class="far fa-trash-alt"></i> Xóa</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item__image">
+                    <img src="img/5.1.jpg">
+                </div>
+                <div class="cart-item__name">Otis T-shirt</div>
+                <div class="cart-item__price">150.000đ</div>
+                <div class="cart-item__quantity">
+                    <div class="cart-quantity__btn">
+                        <button class="cart-quantity__button sub">-</button>
+                        <input type="number" name="quantity" step="1" value="1" class="btn-quantity" min="1">
+                        <button class="cart-quantity__button add">+</button>
+                    </div>
+                </div>
+                <div class="cart-item__total">150.000đ</div>
+                <div class="cart-item__action">
+                    <button class="remove-cart__btn"><i class="far fa-trash-alt"></i> Xóa</button>
+                </div>
+            </div>
+            <div class="total-money">
+                <span>Tổng tiền: </span>
+                <span>450.000đ</span>
+            </div>
+            <div class="cart-footer__btn">
+                <button class="continue-shopping"><i class="fas fa-shopping-bag"></i> Tiếp Tục Mua Hàng</button>
+                <button class="cart-checkout"><i class="fas fa-money-check-alt"></i> Thanh Toán</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-custom footer">
+            <div class="column">
+                <img src="img/logo.png" class="f-logo">
+                <ul class="f-infomation">
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Địa chỉ: XXX - XXXX - XXXXXXX</span></li>
+                    <li><i class="fas fa-phone-alt"></i> <span>Số điện thoại: 0987.654.321</span></li>
+                    <li><i class="far fa-envelope-open"></i> <span>Email: admin@fashion.vn</span></li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="column-title">Địa Chỉ Cửa Hàng</div>
+                <ul class="f-link">
+                    <li><a href="#">Hướng Dẫn Thanh Toán</a></li>
+                    <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="#">Hướng Dẫn Chọn Site</a></li>
+                    <li><a href="#">Hướng Dẫn Đổi Trả</a></li>
+                    <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="column-title">Địa Chỉ Cửa Hàng</div>
+                <ul class="f-link">
+                    <li><a href="#">Hướng Dẫn Thanh Toán</a></li>
+                    <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="#">Hướng Dẫn Chọn Site</a></li>
+                    <li><a href="#">Hướng Dẫn Đổi Trả</a></li>
+                    <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="column-title">Địa Chỉ Cửa Hàng</div>
+                <form class="f-subscribe">
+                    <input type="text" placeholder="Nhập email của bạn...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </form>
+                <ul class="social-share">
+                    <li class="social-item social-item--facebook">
+                      <i class="fab fa-facebook-square"></i>
+                    </li>
+                    <li class="social-item social-item--twitter">
+                      <i class="fab fa-twitter"></i>
+                    </li>
+                    <li class="social-item social-item--telegram">
+                      <i class="fab fa-telegram"></i>
+                    </li>
+                    <li class="social-item social-item--linkedin">
+                      <i class="fab fa-linkedin"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
