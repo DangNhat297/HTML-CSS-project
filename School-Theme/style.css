@@ -1,0 +1,804 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+/* overflow scroll */
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #cf8989;
+}
+.sticky{
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /*left: 10px;*/
+    /*right: 20px;*/
+    /*bottom: 10px;*/
+}
+/* trang chu - homepage */
+.navhead{
+    width: 100%;
+    background-color: #0963cc;
+    height: 33px;
+    display: block;
+}
+.main-navhead{
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-navhead ul{
+    list-style-type: none;
+}
+.main-navhead ul li:first-child{
+    margin: 0px 0px 0px 5px;
+}
+.main-navhead ul li{
+    line-height: 30px;
+    display: inline-block;
+    padding: 1px 3px 1px 0px;
+    border-radius: 2px;
+}
+.main-navhead ul li:first-child{
+    color: white;
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
+    float: left;
+}
+.main-navhead ul li:first-child:hover{
+    background-color: #3185e6; 
+    cursor: pointer;
+}
+.main-navhead ul li:last-child{
+    float: right;
+}
+input[name=timkiem]{
+    height: 100%;
+    padding: 7px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+button[name=search]{
+    padding: 7px;
+    background-color: #fff;
+    color: #3185e6;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: -4px;
+}
+button[name=search]:hover{
+    color: #02336b;
+}
+#container{
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+#container .header img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* navbar */
+.active {
+    background-color: #1263a1;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0963cc;
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+    
+}
+.navbar li a:hover {
+    color: white;
+    background-color: #3185e6;
+}
+/* chu chay */
+.chuchay{
+    padding: 8px 0px 8px 5px;
+    width: 100%;
+}
+hr{
+    margin-bottom: 20px;
+}
+.chuchay .datetime{
+    display: inline-block;
+    float: left;
+    color: #6d6d6d;
+    font-weight: bold;
+    font-size: 15px;
+    padding-right: 20px;
+}
+.chuchay marquee{
+    display: inline-block;
+    width: 81.9%;
+    float: right;
+}
+/* tin tuc-sukien, lich cong tac */
+#container .left{
+    width: 65%;
+    float: left;
+    display: block;
+    min-height:470px;
+}
+#container .right{
+    width: 34%;
+    display: block;
+    float: right;
+    max-height: 460px;
+}
+/* tin tuc - su kien */
+.left .title{
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #0963cc;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.left .tin-chinh{
+    float: left;
+    width: 50%;
+    display: block;
+    border: 1px solid gray;
+    height: 100%;
+}
+.left .tin-chinh img{
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    transition: transform .2s linear;
+}
+.left .tin-chinh img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.left .tin-chinh .title {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #0963cc;
+}
+.tin-chinh .title a{
+    color: white;
+    text-decoration: none;
+}
+.tin-chinh .title a:hover{
+    color:rgb(255, 225, 225);
+}
+.tin-chinh .title .time-post {
+    color: white;
+    font-weight: normal;
+    font-size: 13px;
+}
+.left .tin-phu{
+    float: right;
+    width: 49%;
+    display: block;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.tin-phu ul {
+    list-style-type: none;
+
+}
+.tin-phu ul li {
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    transition: color .2s linear;
+}
+.tin-phu ul li img{
+    float: left;
+    width: 30%;
+    height: auto;
+}
+.tin-phu ul li .title{
+    margin: 0;
+    line-height: 20px;
+    width: 69%;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+.tin-phu ul li .title a{
+    color: #0963cc;
+    text-decoration: none;
+}
+/* lich cong tac */
+.right{
+    border: 1px solid #0963cc;
+}
+.right .list{
+    padding: 5px 0px;
+}
+.right .list ul{
+    padding: 2px 5px;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: #0963cc;
+    font-weight: bold;
+}
+.right .list ul li{
+    border-radius: 5px;
+    padding: 6px 14px;
+    border: 0.1px solid #0963cc;
+    margin: 9px 0px;
+    cursor: pointer;
+    transform: color .2s linear;
+}
+.right .list ul li:hover{
+    padding: 6px 0px 6px 30px;
+    background-color: #0963cc;
+    color: #fff;
+}
+.table-right table{
+    border-collapse: collapse;
+    font-size: 13px;
+    border-style: hidden;
+}
+.table-right .dong1{
+    background-color: #bdc9d9;
+}
+.table-right th,td{
+    padding: 2px;
+}
+.table-right ul{
+    list-style-type: none;
+}
+.table-right ul li::before{
+    content: "\f0a4";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    opacity: 0.5;
+    margin: 0px 4px 0px 3px;
+}
+.right .title{
+    height: 40px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 38%, rgba(224,224,224,1) 100%);
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #0963cc;
+    border-bottom: 4px solid #0963cc;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.right img{
+    display: block;
+    margin: 30px auto;
+    transition: transform .2s linear;
+}
+.right img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.banner-ads{
+    clear: both;
+    display: inline-block;
+}
+.banner-ads img{
+    display: block;
+    border: 1px solid gray;
+    padding: 2px;
+}
+.banner-ads img:hover{
+    cursor: pointer;
+}
+.banner-ads img:first-child{
+    float: left;
+    width: 49%;
+}
+.banner-ads img:last-child{
+    float: right;
+    width: 49%;
+} 
+/* layout he thong nghiep vu, ban tin truong, hoat dong chuyen mon */
+#container .column{
+    clear: both;
+    margin-top: 20px;
+    display: inline-block;
+}
+.column .col1{
+    display: block;
+    border: 1px solid #0963cc;
+    float: left;
+    width: 20%;
+    min-height: 300px;
+}
+.column .col2{
+    display: block;
+    border: 1px solid #0963cc;
+    float: left;
+    width: 39%;
+    margin-left: 1%;
+    min-height: 300px;
+}
+.column .col3{
+    display: block;
+    border: 1px solid #0963cc;
+    float: right;
+    width: 39%;
+    min-height: 300px;
+}
+.column .title{
+    height: 40px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 38%, rgba(224,224,224,1) 100%);
+    line-height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #0963cc;
+    border-bottom: 4px solid #0963cc;
+    font-weight: bold;
+    padding-left: 10px;
+}
+/* he thong nghiep vu */
+.col1 ul{
+    list-style-type: none;
+}
+.col1 ul li::before{
+    content:"\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    opacity: 0.5;
+    margin: 0px 4px 0px 3px;
+}
+.col1 ul li{
+    display: block;
+    border-bottom: 1px solid #4381c8;
+}
+.col1 ul li:last-child{
+    border-bottom: none;
+}
+.col1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    line-height: 40px;
+    padding: 5px;
+}
+.col1 ul li a:hover{
+    color: #4381c8;
+}
+/* ban tin truong, hoat dong chuyen mon */
+.tin1{
+    margin-top: 10px;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #0963cc;
+}
+.tin1 img{
+    width: 30%;
+    height: auto;
+    float: left;
+    border: 1px solid gray;
+    padding: 3px;
+    transition: transform .2s linear;
+}
+.tin1 img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.tin1-title{
+    text-transform: uppercase;
+    width: 70%;
+    float: left;
+    color: black;
+    height: 50px;
+    display: block;
+    font-weight: bold;
+    padding: 0px 10px 10px 10px;
+}
+.tin1-title a{
+    color: black;
+    text-decoration: none;
+}
+.tin1-title a:hover{
+    color: #0963cc;
+}
+.tin1-title .timepost{
+    position: absolute;
+    opacity: 0.9;
+    bottom: 10px;
+    font-size: 13px;
+}
+.list-tinphu ul li::before{
+    content:"\f101";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    opacity: 0.5;
+    margin: 0px 7px;
+}
+.list-tinphu{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 200px;
+}
+.list-tinphu ul{
+    list-style-type: none;
+}
+.list-tinphu ul li{
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+.list-tinphu ul li{
+    border-bottom: 1px solid #3185e6;
+}
+.list-tinphu ul li a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+.list-tinphu ul li a:hover{
+    color: #0963cc;
+}
+/* footer */
+.footer{
+    clear: both;
+    margin-top: 10px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #0963cc;
+    color: white;
+    height: 100%;
+    line-height: 40px;
+}
+/* lien he */
+#contact .map{
+    display: block;
+    margin-bottom: 10px;
+}
+#contact .left{
+    float: left;
+    display: block;
+    width: 48%;
+    min-height: 300px;
+    border: 1px solid gray;
+}
+#contact .right{
+    float: right;
+    display: block;
+    width: 50%;
+    min-height: 300px;
+    border: 1px dotted goldenrod;
+    padding: 10px;
+}
+#contact .left .title{
+    display: block;
+    border-bottom: 1px solid #E20000;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    line-height: 20px;
+    color: #E20000;
+    background-color: rgb(221, 221, 221);
+    text-transform: uppercase;
+
+}
+#contact .left .lienhe{
+    padding: 10px;
+    line-height: 40px;
+}
+#contact .right input,#contact .right textarea{
+    margin: 10px 0px;
+    outline: none;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0.5px solid #dddddd;
+    box-shadow: inset 0 0 1px rgb(141, 141, 141);
+}
+#contact .right input:focus,#contact .right textarea:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: none;
+    outline: none;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+#contact .right .form{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+}
+#contact .right button{
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+}
+/* intro */
+#intro .main .col-left{
+    display: inline-block;
+    width: 20%;
+    height: auto;
+}
+#intro .main .col1{
+    display: block;
+    border: 1px solid #0963cc;
+    float: left;
+    width: 100%;
+    min-height: 100px;
+}
+#intro .main .title{
+    height: 40px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 38%, rgba(224,224,224,1) 100%);
+    line-height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #0963cc;
+    border-bottom: 4px solid #0963cc;
+    font-weight: bold;
+    padding-left: 10px;
+}
+#intro .main .col2{
+    min-height: 500px;
+    border: 1px solid #0963cc;
+    float: right;
+    width: 79%;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+#intro .main .col2 .gioithieu{
+    padding: 15px;
+    text-align: left;
+    display: block;
+}
+#intro .main .col2 img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+/* feedback */
+#feedback .form-fb {
+    width: 100%;
+    border: 1px solid #0963cc;
+    min-height: 300px;
+}
+#feedback .form-fb .title{
+    height: 40px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 38%, rgba(224,224,224,1) 100%);
+    line-height: 40px;
+    border-bottom: 4px solid #0963cc;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #0963cc;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#feedback .form-fb img{
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#feedback .form-fb input,#feedback .form-fb textarea{
+    margin: 10px 0px;
+    outline: none;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0.5px solid #dddddd;
+    box-shadow: inset 0 0 1px rgb(141, 141, 141);
+}
+#feedback .form-fb input:focus,#feedback .form-fb textarea:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: none;
+    outline: none;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+#feedback .form-fb form{
+    padding: 20px;
+}
+#feedback .form-fb button{
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: #0963cc;
+    color: white;
+    font-weight: bold;
+    border: 1px dotted #fff;
+    outline: none;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+#feedback .form-fb button:hover{
+    background-color: #fff;
+    border: 1px solid #0963cc;
+    color: #0963cc;
+}
+/* hoi dap */
+#questions .q-a{
+    width: 100%;
+    display: block;
+    min-height: 300px;
+    border: 1px solid #0963cc;
+}
+#questions .q-a .title{
+    height: 40px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 38%, rgba(224,224,224,1) 100%);
+    line-height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #0963cc;
+    border-bottom: 4px solid #0963cc;
+    font-weight: bold;
+    padding-left: 10px;
+}
+#questions .q-a>img{
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+#questions .filter{
+    display: inline-block;
+    margin: 2px;
+    float: right;
+    font-size: 15px;
+}
+#questions .filter select{
+    font-size: 15px;
+    padding: 3px;
+    outline: none;
+}
+.list-question{
+    clear: both;
+    min-height: 500px;
+    display: block;
+}
+.list-question ul li.bg2{
+    background-color: #E8F1FC;
+}
+.list-question ul{
+    list-style-type: none;
+}
+.list-question ul li a{
+    text-decoration: none;
+    color: #0963cc;
+    font-weight:500;
+    word-spacing: 2px;
+}
+.list-question ul li{
+    color: #0963cc;
+    line-height: 30px;
+    padding: 10px 10px 10px 20px;
+    border-bottom: 1px dotted #0963cc;
+}
+.list-question ul li .timepost{
+    color:rgb(141, 141, 141);
+    font-size: 14px;
+}
+.pagination ul{
+    text-align: center;
+    list-style-type: none;
+    margin: 10px;
+    font-size: 20px;
+}
+.pagination ul li{
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 3px;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.pagination ul li:hover{
+    background-color: #0963cc;
+    color: #fff;
+}
+.pagination ul li.paging{
+    color: #fff;
+    background-color: #0963cc;
+}
+.q-a .slideshow{
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+.q-a>.slideshow>img{
+    width: 80%;
+    border: 0.5px dotted #1085e6;
+    padding: 10px; 
+    height: 430px;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+}
+.q-a>.slideshow>button{
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #0963cc;
+    color: white;
+    outline: none;
+    border: none;
+    transition: all 0.2s linear;
+}
+.q-a>.slideshow>button:hover{
+    background-color: white;
+    color: #0963cc;
+    border: 0.5px solid #0963cc;
+    cursor: pointer;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện ảnh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Icon_N_red.svg/512px-Icon_N_red.svg.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+       <!-- NGUYEN DANG NHAT - PH16068
+    
+  _   _  _____ _    ___     ________ _   _   _____          _   _  _____   _   _ _    _       _______ 
+ | \ | |/ ____| |  | \ \   / /  ____| \ | | |  __ \   /\   | \ | |/ ____| | \ | | |  | |   /\|__   __|
+ |  \| | |  __| |  | |\ \_/ /| |__  |  \| | | |  | | /  \  |  \| | |  __  |  \| | |__| |  /  \  | |   
+ | . ` | | |_ | |  | | \   / |  __| | . ` | | |  | |/ /\ \ | . ` | | |_ | | . ` |  __  | / /\ \ | |   
+ | |\  | |__| | |__| |  | |  | |____| |\  | | |__| / ____ \| |\  | |__| | | |\  | |  | |/ ____ \| |   
+ |_| \_|\_____|\____/   |_|  |______|_| \_| |_____/_/    \_\_| \_|\_____| |_| \_|_|  |_/_/    \_\_|   
+                                                                                                      
+                                                                                                      
+    -->
+    <div id="questions">
+        <div class="wrapper">
+            <div class="main-navhead">
+                <div class="navhead">
+                <ul>
+                    <li>
+                        <i class="fas fa-chevron-circle-right"></i> Đăng nhập
+                    </li>
+                    <li>
+                        <input type="text" name="timkiem" placeholder="Tìm kiếm">
+                        <button name="search"><i class="fas fa-search"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div id="container">
+            <!-- banner -->
+            <div class="header">
+                <img src="img/banner.jpg">
+            </div>
+            <!-- banner -->
+            <!-- menubar -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="trangchu.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                    <li><a href="gopy.html">Góp ý</a></li>
+                    <li><a href="hoidap.html">Hỏi đáp</a></li>
+                    <li><a href="thuvienanh.html" class="active">Thư viện ảnh</a></li>
+                </ul>
+            </div>
+            <!-- menubar -->
+            <div class="chuchay">
+                <div class="datetime"></div> |
+                <marquee>Chào mừng bạn đến với Cổng thông tin điện tử trường Trung học phổ thông Trần Phú.</marquee>
+            </div>
+            <hr>
+            <!-- noi dung trang web -->
+            <div class="animated animatedFadeInUp fadeInUp">
+            <div class="q-a">
+                <div class="title" style="font-size: 13px">Trang chủ <i class="fas fa-chevron-right"></i> Thư viện ảnh</div>
+              <div class="slideshow">
+                <img id="slider" src="img/anh0.jpg">
+                <button onclick="prev()"><i class="fas fa-caret-left"></i></button>
+                <button onclick="next()"><i class="fas fa-caret-right"></i></button>
+            </div>
+            
+          
+            </div>
+            </div>
+            <div class="footer">
+                <strong>ĐƠN VỊ CHỦ QUẢN: TRƯỜNG THPT TRẦN PHÚ</strong>
+                <p>Địa chỉ: Xã Đức Thủy -Huyện Đức Thọ - Tỉnh Hà Tĩnh</p>
+                <p>Điện thoại:  - Fax:  - Email:</p>
+                <p>Nguyễn Đăng Nhật - PH16068</p>
+            </div>
+        </div>
+        <!--footer -->
+
+    </div>
+    <script>
+      var images = [
+          "img/anh1.jpg",
+          "img/anh2.jpg",
+          "img/anh3.jpg"
+      ];
+      var num = 0;
+  
+      function next() {
+          var slider = document.getElementById("slider");
+          num++;
+          if(num >= images.length) {
+              num = 0;
+          }
+          slider.src = images[num];
+      }
+  
+      function prev() {
+          var slider = document.getElementById("slider");
+          num--;
+          if(num < 0) {
+              num = images.length-1;
+          }
+          slider.src = images[num];
+      }
+  </script>
+    <script>
+        var today = new Date();
+        var weekday = new Array(7);
+        weekday[0] = "Chủ nhật";
+        weekday[1] = "Thứ Hai";
+        weekday[2] = "Thứ Ba";
+        weekday[3] = "Thứ Tư";
+        weekday[4] = "Thứ Năm";
+        weekday[5] = "Thứ Sáu";
+        weekday[6] = "Thứ Bảy";
+        var dayName = weekday[today.getDay()];
+        var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+        var time = today.getHours() + ":" + today.getMinutes();
+        var dateTime = dayName + ', ' + date + ' - ' + time;
+        document.getElementsByClassName("datetime")[0].innerHTML = dateTime;
+     </script> 
+</body>
+</html>
