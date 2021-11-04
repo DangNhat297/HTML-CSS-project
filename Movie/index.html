@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="scroll">
+    <!--start header-->
+    <header>
+        <div class="container-width header">
+            <img src="img/logo.svg">
+            <form class="nav-search">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." name="search">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="container-width navmenu">
+            <input id="checkNav" type="checkbox"/>
+            <label for="checkNav"><i class="fas fa-align-justify"></i></label>
+            <nav>
+                <ul class="navmenu">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="#">Phim Lẻ</a></li>
+                    <li><a href="#">Phim Bộ</a></li>
+                    <li class="menu-dropdown"><label for="dropdown"><i class="fas fa-ellipsis-h"></i> <i class="fas fa-angle-down"></i></label>
+                        <input type="checkbox" id="dropdown" hidden>
+                        <ul class="dropdown">
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Điều Khoản</a></li>
+                            <li><a href="#">Chính Sách</a></li>
+                        </ul>
+                    </li>
+                    <li><label for="megamenu">Năm</label>
+                        <input type="checkbox" id="megamenu" hidden>
+                        <ul class="megamenu">
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Điều Khoản</a></li>
+                            <li><a href="#">Chính Sách</a></li>
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Điều Khoản</a></li>
+                            <li><a href="#">Chính Sách</a></li>
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Điều Khoản</a></li>
+                            <li><a href="#">Chính Sách</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--end header-->
+    <!--start main-->
+    <main>
+        <div class="newfilm">
+            <div class="film container-width">
+                <div class="film__header">
+                    <div><strong>Phim mới</strong> cập nhật</div>
+                </div>
+                <div class="film__list">
+                    <a href="#">
+                        <div class="film__list--item">
+                            <div class="film__item--image">
+                                <img src="img/film/00.jpg">
+                            </div>
+                            <div class="film__item--name">
+                                Sát Thủ Nhân Tạo
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="film__list--item">
+                            <div class="film__item--image">
+                                <img src="img/film/01.jpg">
+                            </div>
+                            <div class="film__item--name">
+                                Thoát Khỏi Afghanistan
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="film__list--item">
+                            <div class="film__item--image">
+                                <img src="img/film/06.jpg">
+                            </div>
+                            <div class="film__item--name">
+                                Thế Chiến 1917
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="film__list--item">
+                            <div class="film__item--image">
+                                <img src="img/film/05.jpg">
+                            </div>
+                            <div class="film__item--name">
+                                Trẻ Trâu Khởi Nghiệp
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="film__list--item">
+                            <div class="film__item--image">
+                                <img src="img/film/04.jpg">
+                            </div>
+                            <div class="film__item--name">
+                                21 Cây Cầu
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-width main">
+            <div class="film__header">
+                <div><strong>Phim </strong>thịnh hành</div>
+                <div><button class="viewmore">Xem Tất Cả</button></div>
+            </div>
+            <div class="film__list">
+                <a href="#">
+                    <div class="film__list--item">
+                        <div class="film__item--image">
+                            <img src="img/film/00.jpg">
+                        </div>
+                        <div class="film__item--name">
+                            Sát Thủ Nhân Tạo
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="film__list--item">
+                        <div class="film__item--image">
+                            <img src="img/film/01.jpg">
+                        </div>
+                        <div class="film__item--name">
+                            Thoát Khỏi Afghanistan
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="film__list--item">
+                        <div class="film__item--image">
+                            <img src="img/film/06.jpg">
+                        </div>
+                        <div class="film__item--name">
+                            Thế Chiến 1917
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="film__list--item">
+                        <div class="film__item--image">
+                            <img src="img/film/05.jpg">
+                        </div>
+                        <div class="film__item--name">
+                            Trẻ Trâu Khởi Nghiệp
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="film__list--item">
+                        <div class="film__item--image">
+                            <img src="img/film/04.jpg">
+                        </div>
+                        <div class="film__item--name">
+                            21 Cây Cầu
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="film__list--item">
+                        <div class="film__item--image">
+                            <img src="img/film/00.jpg">
+                        </div>
+                        <div class="film__item--name">
+                            Sát Thủ Nhân Tạo
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="film__list--item">
+                        <div class="film__item--image">
+                            <img src="img/film/01.jpg">
+                        </div>
+                        <div class="film__item--name">
+                            Thoát Khỏi Afghanistan
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="film__list--item">
+                        <div class="film__item--image">
+                            <img src="img/film/06.jpg">
+                        </div>
+                        <div class="film__item--name">
+                            Thế Chiến 1917
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="film__list--item">
+                        <div class="film__item--image">
+                            <img src="img/film/05.jpg">
+                        </div>
+                        <div class="film__item--name">
+                            Trẻ Trâu Khởi Nghiệp
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="film__list--item">
+                        <div class="film__item--image">
+                            <img src="img/film/04.jpg">
+                        </div>
+                        <div class="film__item--name">
+                            21 Cây Cầu
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <button class="loadmore">Tải thêm phim...</button>
+        </div>
+    </main>
+    <!--end main-->
+    <!--footer-->
+    <footer>
+        <div class="footer container-width">
+            <img src="img/logo.svg">
+            <nav>
+                <ul class="navmenu">
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Điều Khoản</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <button class="ontop"><i class="fas fa-arrow-up"></i></button>
+                </ul>
+            </nav>
+        </div>
+        <div class="copyright container-width">© Copyright 2021. Author Nguyen Dang Nhat - Clone Hotflix Theme</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

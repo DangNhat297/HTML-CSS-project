@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="scroll">
+    <!--start header-->
+    <header>
+        <div class="container-width header">
+            <img src="img/logo.svg">
+            <form class="nav-search">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." name="search">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="container-width navmenu">
+            <input id="checkNav" type="checkbox"/>
+            <label for="checkNav"><i class="fas fa-align-justify"></i></label>
+            <nav>
+                <ul class="navmenu">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="#">Phim Lẻ</a></li>
+                    <li><a href="#">Phim Bộ</a></li>
+                    <li class="menu-dropdown"><label for="dropdown"><i class="fas fa-ellipsis-h"></i> <i class="fas fa-angle-down"></i></label>
+                        <input type="checkbox" id="dropdown" hidden>
+                        <ul class="dropdown">
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Điều Khoản</a></li>
+                            <li><a href="#">Chính Sách</a></li>
+                        </ul>
+                    </li>
+                    <li><label for="megamenu">Năm</label>
+                        <input type="checkbox" id="megamenu" hidden>
+                        <ul class="megamenu">
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Điều Khoản</a></li>
+                            <li><a href="#">Chính Sách</a></li>
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Điều Khoản</a></li>
+                            <li><a href="#">Chính Sách</a></li>
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Điều Khoản</a></li>
+                            <li><a href="#">Chính Sách</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--end header-->
+    <!--start main-->
+    <main>
+        <div class="container-width main">
+            <div class="showfilm">
+                <div id="player">
+                    <iframe width="100%" height="600px" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="report">
+                    <button class="view__stats"><i class="far fa-eye"></i> 2049 Lượt Xem</button>
+                    <button class="report__error" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-exclamation-triangle"></i> Báo lỗi</button>
+                </div>
+                <!--modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <form>
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Báo lỗi</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                    <div class="form-group">
+                                        <label>Tên hoặc email</label>
+                                        <input type="email" class="form-control" placeholder="Nhập tên hoặc email của bạn...">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nội dung</label>
+                                        <textarea class="form-control" placeholder="Báo cáo chi tiết về lỗi..." rows="3"></textarea>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                <!--end modal-->
+                <div class="episode">
+                    <div class="episode__header"><span>Chọn tập</span></div>
+                    <div class="episode__list">
+                        <ul class="episode__picker">
+                            <li class="active"><a href="#" data-episode="1pbu95QNMGSPuYvIsPGuZizF-G8vA2p1v">01</a></li>
+                            <li><a href="#" data-episode="1EAOzNm8T5Cadva-xDjxK3X2J_MiIVDcG">02</a></li>
+                            <li><a href="#" data-episode="118Ul_pXJKxhnGIJeko6tBG68Mv35_fKs">03</a></li>
+                            <li><a href="#" data-episode="1pbu95QNMGSPuYvIsPGuZizF-G8vA2p1v">04</a></li>
+                            <li><a href="#" data-episode="1pbu95QNMGSPuYvIsPGuZizF-G8vA2p1v">05</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="film__detail">
+                <div class="film__detail--thumbnail">
+                    <img src="img/film/03.jpg">
+                </div>
+                <div class="film__detail--info">
+                    <div class="film__detail--name">
+                        <p>Chị Mười Ba: Ba Ngày Sinh Tử</p>
+                        <p>Sister 13</p>
+                    </div>
+                    <a href="#"><button class="playfilm"><i class="far fa-play-circle"></i> Xem ngay</button></a>
+                    <ul class="film__list--info">
+                        <li><span><i class="fas fa-stream"></i></span>Trạng thái: <span>HD Vietsub</span></li>
+                        <li><span><i class="fas fa-boxes"></i></span>Thể loại: <span>Hành động, tình cảm</span></li>
+                        <li><span><i class="far fa-clock"></i></span>Thời lượng: <span>45 phút</span></li>
+                        <li><span><i class="far fa-calendar-check"></i></span>Năm sản xuất: <span>2021</span></li>
+                        <li><span><i class="fas fa-globe"></i></span>Quốc gia: <span>Việt Nam</span></li>
+                        <li><span><i class="far fa-eye"></i></span>Lượt xem: <span>2049</span></li>
+                        <li><span><i class="fas fa-tags"></i></span>Từ khóa: <span>phim hanh dong, phim viet nam, phim chieu rap, chi muoi ba</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="film__content">
+                <div class="film__content--header">
+                    <span data-tab="tab-content" class="active">Nội dung phim</span>
+                    <span data-tab="tab-comment">Bình luận</span>
+                </div>
+                <div class="tab-item film__content--body" id="tab-content">
+                    Chị Mười Ba: 3 Ngày Sinh Tử vẫn khai thác đề tài Giang Hồ nhưng sẽ chứa đựng nội dung hấp vẫn và “gai góc” hơn phần 1 nhờ cốt truyện chặt chẽ nhiều bất ngờ và những pha rượt đuổi, đánh đấm chân thật, được đầu tư hoành tráng. Liệu Chị Mười Ba sẽ trải qua hành trình khó khăn và thử thách nào để vượt qua 3 Ngày Sinh Tử và bảo vệ những người anh em vào sống ra chết với mình. Xem thêm tại: https://www.galaxycine.vn/dat-ve/chi-muoi-ba-3-ngay-sinh-tu
+                </div>
+                <div class="tab-item film__content--comment" id="tab-comment">
+                    <div class="tab__comment--header">
+                        <input type="text" placeholder="Nhập bình luận..." class="incomment">
+                        <button class="sendcomment"><i class="far fa-paper-plane"></i> Gửi bình luận</button>
+                    </div>
+                    <div class="tab__comment--list" id="comment-list">
+                        <div class="comment__detail">
+                            <div class="comment__detail--name">
+                                <span>Họ và tên</span>
+                                <span>15:20:20 04-09-2020</span>
+                            </div>
+                            <div class="comment__detail--content">
+                                Phim hay quá hấp dẫn quá đi
+                            </div>
+                        </div>
+                        <div class="comment__detail">
+                            <div class="comment__detail--name">
+                                <span>Họ và tên</span>
+                                <span>15:20:20 04-09-2020</span>
+                            </div>
+                            <div class="comment__detail--content">
+                                Phim hay quá hấp dẫn quá đi
+                            </div>
+                        </div>
+                        <div class="comment__detail">
+                            <div class="comment__detail--name">
+                                <span>Họ và tên</span>
+                                <span>15:20:20 04-09-2020</span>
+                            </div>
+                            <div class="comment__detail--content">
+                                Phim hay quá hấp dẫn quá đi
+                            </div>
+                        </div>
+                        <div class="comment__detail">
+                            <div class="comment__detail--name">
+                                <span>Họ và tên</span>
+                                <span>15:20:20 04-09-2020</span>
+                            </div>
+                            <div class="comment__detail--content">
+                                Phim hay quá hấp dẫn quá đi
+                            </div>
+                        </div>
+                        <div class="comment__detail">
+                            <div class="comment__detail--name">
+                                <span>Họ và tên</span>
+                                <span>15:20:20 04-09-2020</span>
+                            </div>
+                            <div class="comment__detail--content">
+                                Phim hay quá hấp dẫn quá đi
+                            </div>
+                        </div>
+                        <div class="comment__detail">
+                            <div class="comment__detail--name">
+                                <span>Họ và tên</span>
+                                <span>15:20:20 04-09-2020</span>
+                            </div>
+                            <div class="comment__detail--content">
+                                Phim hay quá hấp dẫn quá đi
+                            </div>
+                        </div>
+                        <div class="comment__detail">
+                            <div class="comment__detail--name">
+                                <span>Họ và tên</span>
+                                <span>15:20:20 04-09-2020</span>
+                            </div>
+                            <div class="comment__detail--content">
+                                Phim hay quá hấp dẫn quá đi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--end main-->
+    <!--footer-->
+    <footer>
+        <div class="footer container-width">
+            <img src="img/logo.svg">
+            <nav>
+                <ul class="navmenu">
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Điều Khoản</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <button class="ontop"><i class="fas fa-arrow-up"></i></button>
+                </ul>
+            </nav>
+        </div>
+        <div class="copyright container-width">© Copyright 2021. Author Nguyen Dang Nhat - Clone Hotflix Theme</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/tab.js"></script>
+</body>
+</html>
